@@ -5,7 +5,7 @@ import SwiftAWSSignatureV4
 import Dispatch
 
 class GETTests : XCTestCase {
-	//Fill in the string constants to run your own tastes with your own account
+	//Fill in the string constants to run your own tests with your own account
 	/*
 	func testGET() {
 		let bucket = AWSBucket(name: "", region: "")
