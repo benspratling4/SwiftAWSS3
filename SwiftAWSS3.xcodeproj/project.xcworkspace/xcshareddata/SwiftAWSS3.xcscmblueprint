@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "421E6FF75CCB608CECAF99060DFDFE07BE97C6D8",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "63C954CB98ED64D820CAE65ED2AE24190210511A" : 9223372036854775807,
+    "421E6FF75CCB608CECAF99060DFDFE07BE97C6D8" : 9223372036854775807,
+    "CB7FD8B39A3635BAEA340C1AE3EF89553CB3204E" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "32E934FF-6901-4560-B027-A8F2B282D2F7",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "63C954CB98ED64D820CAE65ED2AE24190210511A" : "SwiftAWSS3\/.build\/checkouts\/SwiftAWSSignatureV4.git--8083113307844717803\/",
+    "421E6FF75CCB608CECAF99060DFDFE07BE97C6D8" : "SwiftAWSS3\/",
+    "CB7FD8B39A3635BAEA340C1AE3EF89553CB3204E" : "SwiftAWSS3\/.build\/checkouts\/BlueCryptor.git-2709167748876642405\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "SwiftAWSS3",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "SwiftAWSS3.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/benspratling4\/SwiftAWSS3.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "421E6FF75CCB608CECAF99060DFDFE07BE97C6D8"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "\/Users\/ben\/GitHub\/SwiftAWSS3\/.build\/repositories\/SwiftAWSSignatureV4.git--8083113307844717803",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "63C954CB98ED64D820CAE65ED2AE24190210511A"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "\/Users\/ben\/GitHub\/SwiftAWSS3\/.build\/repositories\/BlueCryptor.git-2709167748876642405",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "CB7FD8B39A3635BAEA340C1AE3EF89553CB3204E"
+    }
+  ]
+}
