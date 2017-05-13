@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B5CD7F1B1EC737250010EAE9 /* PutComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CD7F1A1EC737250010EAE9 /* PutComponents.swift */; };
+		B5CD7F1B1EC737250010EAE9 /* S3PutComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CD7F1A1EC737250010EAE9 /* S3PutComponents.swift */; };
 		B5CD7F1D1EC738740010EAE9 /* ServerSideEncryption.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5CD7F1C1EC738740010EAE9 /* ServerSideEncryption.swift */; };
 		OBJ_40 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* Crypto.swift */; };
 		OBJ_41 /* Cryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* Cryptor.swift */; };
@@ -78,7 +78,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B5CD7F1A1EC737250010EAE9 /* PutComponents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PutComponents.swift; sourceTree = "<group>"; };
+		B5CD7F1A1EC737250010EAE9 /* S3PutComponents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = S3PutComponents.swift; sourceTree = "<group>"; };
 		B5CD7F1C1EC738740010EAE9 /* ServerSideEncryption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerSideEncryption.swift; sourceTree = "<group>"; };
 		OBJ_11 /* GETTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GETTests.swift; sourceTree = "<group>"; };
 		OBJ_12 /* DerivedData */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DerivedData; sourceTree = SOURCE_ROOT; };
@@ -225,7 +225,7 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_8 /* AWSBucket.swift */,
-				B5CD7F1A1EC737250010EAE9 /* PutComponents.swift */,
+				B5CD7F1A1EC737250010EAE9 /* S3PutComponents.swift */,
 				B5CD7F1C1EC738740010EAE9 /* ServerSideEncryption.swift */,
 			);
 			path = Sources;
@@ -374,7 +374,7 @@
 			files = (
 				B5CD7F1D1EC738740010EAE9 /* ServerSideEncryption.swift in Sources */,
 				OBJ_67 /* AWSBucket.swift in Sources */,
-				B5CD7F1B1EC737250010EAE9 /* PutComponents.swift in Sources */,
+				B5CD7F1B1EC737250010EAE9 /* S3PutComponents.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
