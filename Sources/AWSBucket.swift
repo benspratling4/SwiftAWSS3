@@ -19,6 +19,7 @@ public struct AWSBucket {
 			return nil
 		}
 		var request = URLRequest(url: url)
+		request.httpBody = Data()
 		if let etag = etag {
 			request.addValue(etag, forHTTPHeaderField: "If-None-Match")
 		}
