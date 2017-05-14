@@ -44,7 +44,7 @@ public struct S3PutComponents {
 			//guard let url = URL(string:"https://examplebucket.s3.amazonaws.com/photos/photo1.jpg") else {
 			return nil
 		}
-		var request:URLRequest = URLRequest(url: url)
+		var request:URLRequest = URLRequest(url: url, cachePolicy:.reloadIgnoringLocalAndRemoteCacheData)
 		request.httpMethod = "PUT"
 		let acl:String = self.acl ?? "bucket-owner-full-control"
 		request.addValue(acl, forHTTPHeaderField: "x-amz-acl")
@@ -56,10 +56,10 @@ public struct S3PutComponents {
 		if let encryption:ServerSideEncryption = serverSideEncryption {
 			switch encryption {
 			case .default:
-				request.addValue("aws:kms, AES256", forHTTPHeaderField: "x-amz-server-side-encryption")
+				request.addValue("aws:kms", forHTTPHeaderField: "x-amz-server-side-encryption")
 			case .master(let keyID):
 				request.addValue("aws:kms", forHTTPHeaderField: "x-amz-server-side-encryption")
-				request.addValue(keyID, forHTTPHeaderField: "x-amz-server-side-encryption-aws-kms-key-id​")
+				request.addValue(keyID, forHTTPHeaderField: "x-amz-server-side-encryption-aws-kms-key-id")
 			}
 		}
 		
