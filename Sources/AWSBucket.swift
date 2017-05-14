@@ -13,8 +13,8 @@ public struct AWSBucket {
 	
 	///include the leading "/" in the object name
 	public func requestToGETObjectNamed(_ object:String, etag:String? = nil)->URLRequest? {
-		
-		guard let url = URL(string:"https://\(bucket).s3.amazonaws.com\(object)") else {
+		guard let encodedName:String = object.aws_uriEncoded(encodeSlash: false)
+			,let url = URL(string:"https://\(bucket).s3.amazonaws.com\(encodedName)") else {
 			//guard let url = URL(string:"https://examplebucket.s3.amazonaws.com/photos/photo1.jpg") else {
 			return nil
 		}
@@ -27,7 +27,8 @@ public struct AWSBucket {
 	
 	
 	public func requestToDELETEObjectNamed(_ object:String)->URLRequest? {
-		guard let url = URL(string:"https://\(bucket).s3.amazonaws.com\(object)") else {
+		guard let encodedName:String = object.aws_uriEncoded(encodeSlash: false)
+			,let url = URL(string:"https://\(bucket).s3.amazonaws.com\(encodedName)") else {
 			//guard let url = URL(string:"https://examplebucket.s3.amazonaws.com/photos/photo1.jpg") else {
 			return nil
 		}

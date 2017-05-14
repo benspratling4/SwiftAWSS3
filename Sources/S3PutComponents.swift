@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SwiftAWSSignatureV4
 
 ///used to build a PUT request with options
 public struct S3PutComponents {
@@ -38,7 +39,8 @@ public struct S3PutComponents {
 	//not tested
 	///after setting all properties, call this to get a new request
 	public var request:URLRequest? {
-		guard let url = URL(string:"https://\(bucket.bucket).s3.amazonaws.com\(objectName)") else {
+		guard let encodedName:String = objectName.aws_uriEncoded(encodeSlash: false)
+			,let url = URL(string:"https://\(bucket.bucket).s3.amazonaws.com\(encodedName)") else {
 			//guard let url = URL(string:"https://examplebucket.s3.amazonaws.com/photos/photo1.jpg") else {
 			return nil
 		}
