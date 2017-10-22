@@ -40,7 +40,7 @@ public struct S3PutComponents {
 	///after setting all properties, call this to get a new request
 	public var request:URLRequest? {
 		guard let encodedName:String = objectName.aws_uriEncoded(encodeSlash: false)
-			,let url = URL(string:"https://\(bucket.bucket).s3.amazonaws.com\(encodedName)") else {
+			,let url = URL(string:"https://\(bucket.bucket).\(bucket.server)\(encodedName)") else {
 			//guard let url = URL(string:"https://examplebucket.s3.amazonaws.com/photos/photo1.jpg") else {
 			return nil
 		}
