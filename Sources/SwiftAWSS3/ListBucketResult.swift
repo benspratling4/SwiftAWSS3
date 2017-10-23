@@ -9,7 +9,7 @@ import Foundation
 import SwiftPatterns
 
 
-extension SwiftPatterns.XMLElement {
+extension SwiftPatterns.XMLItem {
 	
 	var childString:String? {
 		let stringChildren:[String] = children.flatMap { return $0 as? String }
@@ -41,7 +41,7 @@ public struct ListBucketResult {
 	
 	public init?(xmlData:Data) {
 		//get nodes
-		guard let node = DataToXMLElementFactory(data: xmlData).documentElement?.children.first as? SwiftPatterns.XMLElement else {
+		guard let node = DataToXMLItemFactory(data: xmlData).documentItem?.children.first as? SwiftPatterns.XMLItem else {
 			return nil
 		}
 		if node.name != "ListBucketResult" {
@@ -71,8 +71,8 @@ public struct ListBucketResult {
 			return formatter
 		}()
 		
-		init?(xml:SwiftPatterns.XMLElement) {
-			guard let keyChild:SwiftPatterns.XMLElement = xml.child(named: "Key")
+		init?(xml:SwiftPatterns.XMLItem) {
+			guard let keyChild:SwiftPatterns.XMLItem = xml.child(named: "Key")
 				,let sizeString:String = xml.child(named: "Size")?.childString
 				,let size:Int = Int(sizeString)
 				else {
