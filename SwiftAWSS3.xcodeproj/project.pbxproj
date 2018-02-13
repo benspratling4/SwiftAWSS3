@@ -9,7 +9,7 @@
 /* Begin PBXAggregateTarget section */
 		"CommonCrypto::CommonCrypto::ProductTarget" /* CommonCrypto */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = OBJ_161 /* Build configuration list for PBXAggregateTarget "CommonCrypto" */;
+			buildConfigurationList = OBJ_164 /* Build configuration list for PBXAggregateTarget "CommonCrypto" */;
 			buildPhases = (
 			);
 			dependencies = (
@@ -19,11 +19,11 @@
 		};
 		"SwiftAWSS3::SwiftAWSS3PackageTests::ProductTarget" /* SwiftAWSS3PackageTests */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = OBJ_156 /* Build configuration list for PBXAggregateTarget "SwiftAWSS3PackageTests" */;
+			buildConfigurationList = OBJ_159 /* Build configuration list for PBXAggregateTarget "SwiftAWSS3PackageTests" */;
 			buildPhases = (
 			);
 			dependencies = (
-				OBJ_159 /* PBXTargetDependency */,
+				OBJ_162 /* PBXTargetDependency */,
 			);
 			name = SwiftAWSS3PackageTests;
 			productName = SwiftAWSS3PackageTests;
@@ -31,109 +31,108 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		OBJ_101 /* AWSBucket.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_8 /* AWSBucket.swift */; };
-		OBJ_102 /* ListBucketResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* ListBucketResult.swift */; };
-		OBJ_103 /* S3PutComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* S3PutComponents.swift */; };
-		OBJ_104 /* ServerSideEncryption.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* ServerSideEncryption.swift */; };
-		OBJ_106 /* SwiftPatterns.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftPatterns::SwiftPatterns::Product" /* SwiftPatterns.framework */; };
-		OBJ_107 /* SwiftAWSSignatureV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftAWSSignatureV4::SwiftAWSSignatureV4::Product" /* SwiftAWSSignatureV4.framework */; };
-		OBJ_108 /* Cryptor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Cryptor::Cryptor::Product" /* Cryptor.framework */; };
-		OBJ_116 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* Alert.swift */; };
-		OBJ_117 /* ChangeSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* ChangeSet.swift */; };
-		OBJ_118 /* DataExtraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* DataExtraction.swift */; };
-		OBJ_119 /* DirectoryMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* DirectoryMonitor.swift */; };
-		OBJ_120 /* LogSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* LogSearch.swift */; };
-		OBJ_121 /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* Math.swift */; };
-		OBJ_122 /* MediatedAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* MediatedAccess.swift */; };
-		OBJ_123 /* NonNilArrayFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* NonNilArrayFilter.swift */; };
-		OBJ_124 /* QueuedVar.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* QueuedVar.swift */; };
-		OBJ_125 /* SerializedResourceWrapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* SerializedResourceWrapping.swift */; };
-		OBJ_126 /* URL+ExtendedAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* URL+ExtendedAttributes.swift */; };
-		OBJ_127 /* XMLElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* XMLElement.swift */; };
-		OBJ_133 /* AWSAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* AWSAccount.swift */; };
-		OBJ_134 /* Chunking.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* Chunking.swift */; };
-		OBJ_135 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* String+Extensions.swift */; };
-		OBJ_136 /* URLRequest+AWSAccountSigning.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_35 /* URLRequest+AWSAccountSigning.swift */; };
-		OBJ_138 /* Cryptor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Cryptor::Cryptor::Product" /* Cryptor.framework */; };
-		OBJ_144 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* Crypto.swift */; };
-		OBJ_145 /* Cryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* Cryptor.swift */; };
-		OBJ_146 /* Digest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* Digest.swift */; };
-		OBJ_147 /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* HMAC.swift */; };
-		OBJ_148 /* KeyDerivation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* KeyDerivation.swift */; };
-		OBJ_149 /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_43 /* Random.swift */; };
-		OBJ_150 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* Status.swift */; };
-		OBJ_151 /* StreamCryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_45 /* StreamCryptor.swift */; };
-		OBJ_152 /* Updatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_46 /* Updatable.swift */; };
-		OBJ_153 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_47 /* Utilities.swift */; };
-		OBJ_59 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
-		OBJ_65 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* Package.swift */; };
-		OBJ_71 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* Package.swift */; };
-		OBJ_77 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* Package.swift */; };
-		OBJ_83 /* GETTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* GETTests.swift */; };
-		OBJ_85 /* SwiftAWSS3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftAWSS3::SwiftAWSS3::Product" /* SwiftAWSS3.framework */; };
-		OBJ_86 /* SwiftPatterns.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftPatterns::SwiftPatterns::Product" /* SwiftPatterns.framework */; };
-		OBJ_87 /* SwiftAWSSignatureV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftAWSSignatureV4::SwiftAWSSignatureV4::Product" /* SwiftAWSSignatureV4.framework */; };
-		OBJ_88 /* Cryptor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Cryptor::Cryptor::Product" /* Cryptor.framework */; };
+		OBJ_105 /* AWSBucket.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* AWSBucket.swift */; };
+		OBJ_106 /* ListBucketResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* ListBucketResult.swift */; };
+		OBJ_107 /* S3PutComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* S3PutComponents.swift */; };
+		OBJ_108 /* ServerSideEncryption.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* ServerSideEncryption.swift */; };
+		OBJ_110 /* SwiftPatterns.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftPatterns::SwiftPatterns::Product" /* SwiftPatterns.framework */; };
+		OBJ_111 /* SwiftAWSSignatureV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftAWSSignatureV4::SwiftAWSSignatureV4::Product" /* SwiftAWSSignatureV4.framework */; };
+		OBJ_112 /* Cryptor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Cryptor::Cryptor::Product" /* Cryptor.framework */; };
+		OBJ_120 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* Alert.swift */; };
+		OBJ_121 /* ChangeSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* ChangeSet.swift */; };
+		OBJ_122 /* DataExtraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* DataExtraction.swift */; };
+		OBJ_123 /* DirectoryMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* DirectoryMonitor.swift */; };
+		OBJ_124 /* LogSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* LogSearch.swift */; };
+		OBJ_125 /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* Math.swift */; };
+		OBJ_126 /* MediatedAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* MediatedAccess.swift */; };
+		OBJ_127 /* QueuedVar.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* QueuedVar.swift */; };
+		OBJ_128 /* SerializedResourceWrapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* SerializedResourceWrapping.swift */; };
+		OBJ_129 /* URL+ExtendedAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* URL+ExtendedAttributes.swift */; };
+		OBJ_130 /* XMLItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* XMLItem.swift */; };
+		OBJ_136 /* AWSAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* AWSAccount.swift */; };
+		OBJ_137 /* Chunking.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_35 /* Chunking.swift */; };
+		OBJ_138 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* String+Extensions.swift */; };
+		OBJ_139 /* URLRequest+AWSAccountSigning.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* URLRequest+AWSAccountSigning.swift */; };
+		OBJ_141 /* Cryptor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Cryptor::Cryptor::Product" /* Cryptor.framework */; };
+		OBJ_147 /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* Crypto.swift */; };
+		OBJ_148 /* Cryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* Cryptor.swift */; };
+		OBJ_149 /* Digest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_43 /* Digest.swift */; };
+		OBJ_150 /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* HMAC.swift */; };
+		OBJ_151 /* KeyDerivation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_45 /* KeyDerivation.swift */; };
+		OBJ_152 /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_46 /* Random.swift */; };
+		OBJ_153 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_47 /* Status.swift */; };
+		OBJ_154 /* StreamCryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_48 /* StreamCryptor.swift */; };
+		OBJ_155 /* Updatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* Updatable.swift */; };
+		OBJ_156 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_50 /* Utilities.swift */; };
+		OBJ_63 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+		OBJ_69 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* Package.swift */; };
+		OBJ_75 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* Package.swift */; };
+		OBJ_81 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_51 /* Package.swift */; };
+		OBJ_87 /* GETTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* GETTests.swift */; };
+		OBJ_89 /* SwiftAWSS3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftAWSS3::SwiftAWSS3::Product" /* SwiftAWSS3.framework */; };
+		OBJ_90 /* SwiftPatterns.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftPatterns::SwiftPatterns::Product" /* SwiftPatterns.framework */; };
+		OBJ_91 /* SwiftAWSSignatureV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftAWSSignatureV4::SwiftAWSSignatureV4::Product" /* SwiftAWSSignatureV4.framework */; };
+		OBJ_92 /* Cryptor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Cryptor::Cryptor::Product" /* Cryptor.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		B5E27D0D1F9C5F2000B17A55 /* PBXContainerItemProxy */ = {
+		B54CCDC020337AF200A53599 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Cryptor::Cryptor";
 			remoteInfo = Cryptor;
 		};
-		B5E27D0E1F9C5F2000B17A55 /* PBXContainerItemProxy */ = {
+		B54CCDC120337AF200A53599 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "SwiftPatterns::SwiftPatterns";
 			remoteInfo = SwiftPatterns;
 		};
-		B5E27D0F1F9C5F2000B17A55 /* PBXContainerItemProxy */ = {
+		B54CCDC220337AF200A53599 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "SwiftAWSSignatureV4::SwiftAWSSignatureV4";
 			remoteInfo = SwiftAWSSignatureV4;
 		};
-		B5E27D101F9C5F2000B17A55 /* PBXContainerItemProxy */ = {
+		B54CCDC320337AF200A53599 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Cryptor::Cryptor";
 			remoteInfo = Cryptor;
 		};
-		B5E27D111F9C5F2000B17A55 /* PBXContainerItemProxy */ = {
+		B54CCDC420337AF200A53599 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "SwiftAWSS3::SwiftAWSS3";
 			remoteInfo = SwiftAWSS3;
 		};
-		B5E27D121F9C5F2000B17A55 /* PBXContainerItemProxy */ = {
+		B54CCDC520337AF200A53599 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "SwiftPatterns::SwiftPatterns";
 			remoteInfo = SwiftPatterns;
 		};
-		B5E27D131F9C5F2000B17A55 /* PBXContainerItemProxy */ = {
+		B54CCDC620337AF200A53599 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "SwiftAWSSignatureV4::SwiftAWSSignatureV4";
 			remoteInfo = SwiftAWSSignatureV4;
 		};
-		B5E27D141F9C5F2000B17A55 /* PBXContainerItemProxy */ = {
+		B54CCDC720337AF200A53599 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Cryptor::Cryptor";
 			remoteInfo = Cryptor;
 		};
-		B5E27D151F9C5F2100B17A55 /* PBXContainerItemProxy */ = {
+		B54CCDC820337AF300A53599 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
@@ -144,41 +143,41 @@
 
 /* Begin PBXFileReference section */
 		"Cryptor::Cryptor::Product" /* Cryptor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Cryptor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		OBJ_10 /* S3PutComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = S3PutComponents.swift; sourceTree = "<group>"; };
-		OBJ_11 /* ServerSideEncryption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerSideEncryption.swift; sourceTree = "<group>"; };
-		OBJ_14 /* GETTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GETTests.swift; sourceTree = "<group>"; };
-		OBJ_17 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/ben/GitHub/SwiftAWSS3/.build/checkouts/SwiftPatterns.git-1119433692948586361/Package.swift"; sourceTree = "<group>"; };
-		OBJ_18 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
-		OBJ_19 /* ChangeSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeSet.swift; sourceTree = "<group>"; };
-		OBJ_20 /* DataExtraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExtraction.swift; sourceTree = "<group>"; };
-		OBJ_21 /* DirectoryMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectoryMonitor.swift; sourceTree = "<group>"; };
-		OBJ_22 /* LogSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogSearch.swift; sourceTree = "<group>"; };
-		OBJ_23 /* Math.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
-		OBJ_24 /* MediatedAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediatedAccess.swift; sourceTree = "<group>"; };
-		OBJ_25 /* NonNilArrayFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonNilArrayFilter.swift; sourceTree = "<group>"; };
-		OBJ_26 /* QueuedVar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueuedVar.swift; sourceTree = "<group>"; };
-		OBJ_27 /* SerializedResourceWrapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerializedResourceWrapping.swift; sourceTree = "<group>"; };
-		OBJ_28 /* URL+ExtendedAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+ExtendedAttributes.swift"; sourceTree = "<group>"; };
-		OBJ_29 /* XMLElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLElement.swift; sourceTree = "<group>"; };
-		OBJ_31 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/ben/GitHub/SwiftAWSS3/.build/checkouts/SwiftAWSSignatureV4.git--8083113307844717803/Package.swift"; sourceTree = "<group>"; };
-		OBJ_32 /* AWSAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWSAccount.swift; sourceTree = "<group>"; };
-		OBJ_33 /* Chunking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chunking.swift; sourceTree = "<group>"; };
-		OBJ_34 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
-		OBJ_35 /* URLRequest+AWSAccountSigning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+AWSAccountSigning.swift"; sourceTree = "<group>"; };
-		OBJ_37 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/ben/GitHub/SwiftAWSS3/.build/checkouts/BlueCryptor.git-2709167748876642405/Package.swift"; sourceTree = "<group>"; };
-		OBJ_38 /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
-		OBJ_39 /* Cryptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cryptor.swift; sourceTree = "<group>"; };
-		OBJ_40 /* Digest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Digest.swift; sourceTree = "<group>"; };
-		OBJ_41 /* HMAC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMAC.swift; sourceTree = "<group>"; };
-		OBJ_42 /* KeyDerivation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyDerivation.swift; sourceTree = "<group>"; };
-		OBJ_43 /* Random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Random.swift; sourceTree = "<group>"; };
-		OBJ_44 /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
-		OBJ_45 /* StreamCryptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamCryptor.swift; sourceTree = "<group>"; };
-		OBJ_46 /* Updatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Updatable.swift; sourceTree = "<group>"; };
-		OBJ_47 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		OBJ_10 /* ListBucketResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListBucketResult.swift; sourceTree = "<group>"; };
+		OBJ_11 /* S3PutComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = S3PutComponents.swift; sourceTree = "<group>"; };
+		OBJ_12 /* ServerSideEncryption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerSideEncryption.swift; sourceTree = "<group>"; };
+		OBJ_15 /* GETTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GETTests.swift; sourceTree = "<group>"; };
+		OBJ_16 /* DerivedData */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DerivedData; sourceTree = SOURCE_ROOT; };
+		OBJ_20 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		OBJ_21 /* ChangeSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeSet.swift; sourceTree = "<group>"; };
+		OBJ_22 /* DataExtraction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExtraction.swift; sourceTree = "<group>"; };
+		OBJ_23 /* DirectoryMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectoryMonitor.swift; sourceTree = "<group>"; };
+		OBJ_24 /* LogSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogSearch.swift; sourceTree = "<group>"; };
+		OBJ_25 /* Math.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
+		OBJ_26 /* MediatedAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediatedAccess.swift; sourceTree = "<group>"; };
+		OBJ_27 /* QueuedVar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueuedVar.swift; sourceTree = "<group>"; };
+		OBJ_28 /* SerializedResourceWrapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerializedResourceWrapping.swift; sourceTree = "<group>"; };
+		OBJ_29 /* URL+ExtendedAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+ExtendedAttributes.swift"; sourceTree = "<group>"; };
+		OBJ_30 /* XMLItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLItem.swift; sourceTree = "<group>"; };
+		OBJ_31 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/ben/GitHub/SwiftAWSS3/.build/checkouts/SwiftPatterns.git-8153222432062766290/Package.swift"; sourceTree = "<group>"; };
+		OBJ_34 /* AWSAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWSAccount.swift; sourceTree = "<group>"; };
+		OBJ_35 /* Chunking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chunking.swift; sourceTree = "<group>"; };
+		OBJ_36 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		OBJ_37 /* URLRequest+AWSAccountSigning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+AWSAccountSigning.swift"; sourceTree = "<group>"; };
+		OBJ_38 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/ben/GitHub/SwiftAWSS3/.build/checkouts/SwiftAWSSignatureV4.git-5312922551482390733/Package.swift"; sourceTree = "<group>"; };
+		OBJ_41 /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
+		OBJ_42 /* Cryptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cryptor.swift; sourceTree = "<group>"; };
+		OBJ_43 /* Digest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Digest.swift; sourceTree = "<group>"; };
+		OBJ_44 /* HMAC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMAC.swift; sourceTree = "<group>"; };
+		OBJ_45 /* KeyDerivation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyDerivation.swift; sourceTree = "<group>"; };
+		OBJ_46 /* Random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Random.swift; sourceTree = "<group>"; };
+		OBJ_47 /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
+		OBJ_48 /* StreamCryptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreamCryptor.swift; sourceTree = "<group>"; };
+		OBJ_49 /* Updatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Updatable.swift; sourceTree = "<group>"; };
+		OBJ_50 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		OBJ_51 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/ben/GitHub/SwiftAWSS3/.build/checkouts/BlueCryptor.git-6214515965821713075/Package.swift"; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		OBJ_8 /* AWSBucket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWSBucket.swift; sourceTree = "<group>"; };
-		OBJ_9 /* ListBucketResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListBucketResult.swift; sourceTree = "<group>"; };
+		OBJ_9 /* AWSBucket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWSBucket.swift; sourceTree = "<group>"; };
 		"SwiftAWSS3::SwiftAWSS3::Product" /* SwiftAWSS3.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftAWSS3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"SwiftAWSS3::SwiftAWSS3Tests::Product" /* SwiftAWSS3Tests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = SwiftAWSS3Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		"SwiftAWSSignatureV4::SwiftAWSSignatureV4::Product" /* SwiftAWSSignatureV4.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftAWSSignatureV4.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -186,133 +185,169 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		OBJ_105 /* Frameworks */ = {
+		OBJ_109 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_106 /* SwiftPatterns.framework in Frameworks */,
-				OBJ_107 /* SwiftAWSSignatureV4.framework in Frameworks */,
-				OBJ_108 /* Cryptor.framework in Frameworks */,
+				OBJ_110 /* SwiftPatterns.framework in Frameworks */,
+				OBJ_111 /* SwiftAWSSignatureV4.framework in Frameworks */,
+				OBJ_112 /* Cryptor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_128 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_137 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_138 /* Cryptor.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_154 /* Frameworks */ = {
+		OBJ_131 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_84 /* Frameworks */ = {
+		OBJ_140 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_85 /* SwiftAWSS3.framework in Frameworks */,
-				OBJ_86 /* SwiftPatterns.framework in Frameworks */,
-				OBJ_87 /* SwiftAWSSignatureV4.framework in Frameworks */,
-				OBJ_88 /* Cryptor.framework in Frameworks */,
+				OBJ_141 /* Cryptor.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_157 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_89 /* SwiftAWSS3.framework in Frameworks */,
+				OBJ_90 /* SwiftPatterns.framework in Frameworks */,
+				OBJ_91 /* SwiftAWSSignatureV4.framework in Frameworks */,
+				OBJ_92 /* Cryptor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		OBJ_12 /* Tests */ = {
+		OBJ_13 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_13 /* SwiftAWSS3Tests */,
+				OBJ_14 /* SwiftAWSS3Tests */,
 			);
 			name = Tests;
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_13 /* SwiftAWSS3Tests */ = {
+		OBJ_14 /* SwiftAWSS3Tests */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_14 /* GETTests.swift */,
+				OBJ_15 /* GETTests.swift */,
 			);
 			name = SwiftAWSS3Tests;
 			path = Tests/SwiftAWSS3Tests;
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_15 /* Dependencies */ = {
+		OBJ_17 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_16 /* SwiftPatterns 1.2.0 */,
-				OBJ_30 /* SwiftAWSSignatureV4 0.2.1 */,
-				OBJ_36 /* Cryptor 0.8.9 */,
+				OBJ_18 /* SwiftPatterns 2.0.0 */,
+				OBJ_32 /* SwiftAWSSignatureV4 1.0.0 */,
+				OBJ_39 /* Cryptor 0.8.18 */,
 			);
 			name = Dependencies;
 			sourceTree = "<group>";
 		};
-		OBJ_16 /* SwiftPatterns 1.2.0 */ = {
+		OBJ_18 /* SwiftPatterns 2.0.0 */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_17 /* Package.swift */,
-				OBJ_18 /* Alert.swift */,
-				OBJ_19 /* ChangeSet.swift */,
-				OBJ_20 /* DataExtraction.swift */,
-				OBJ_21 /* DirectoryMonitor.swift */,
-				OBJ_22 /* LogSearch.swift */,
-				OBJ_23 /* Math.swift */,
-				OBJ_24 /* MediatedAccess.swift */,
-				OBJ_25 /* NonNilArrayFilter.swift */,
-				OBJ_26 /* QueuedVar.swift */,
-				OBJ_27 /* SerializedResourceWrapping.swift */,
-				OBJ_28 /* URL+ExtendedAttributes.swift */,
-				OBJ_29 /* XMLElement.swift */,
-			);
-			name = "SwiftPatterns 1.2.0";
-			path = ".build/checkouts/SwiftPatterns.git-1119433692948586361/Sources";
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_30 /* SwiftAWSSignatureV4 0.2.1 */ = {
-			isa = PBXGroup;
-			children = (
+				OBJ_19 /* SwiftPatterns */,
 				OBJ_31 /* Package.swift */,
-				OBJ_32 /* AWSAccount.swift */,
-				OBJ_33 /* Chunking.swift */,
-				OBJ_34 /* String+Extensions.swift */,
-				OBJ_35 /* URLRequest+AWSAccountSigning.swift */,
 			);
-			name = "SwiftAWSSignatureV4 0.2.1";
-			path = ".build/checkouts/SwiftAWSSignatureV4.git--8083113307844717803/Sources";
+			name = "SwiftPatterns 2.0.0";
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_36 /* Cryptor 0.8.9 */ = {
+		OBJ_19 /* SwiftPatterns */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_37 /* Package.swift */,
-				OBJ_38 /* Crypto.swift */,
-				OBJ_39 /* Cryptor.swift */,
-				OBJ_40 /* Digest.swift */,
-				OBJ_41 /* HMAC.swift */,
-				OBJ_42 /* KeyDerivation.swift */,
-				OBJ_43 /* Random.swift */,
-				OBJ_44 /* Status.swift */,
-				OBJ_45 /* StreamCryptor.swift */,
-				OBJ_46 /* Updatable.swift */,
-				OBJ_47 /* Utilities.swift */,
+				OBJ_20 /* Alert.swift */,
+				OBJ_21 /* ChangeSet.swift */,
+				OBJ_22 /* DataExtraction.swift */,
+				OBJ_23 /* DirectoryMonitor.swift */,
+				OBJ_24 /* LogSearch.swift */,
+				OBJ_25 /* Math.swift */,
+				OBJ_26 /* MediatedAccess.swift */,
+				OBJ_27 /* QueuedVar.swift */,
+				OBJ_28 /* SerializedResourceWrapping.swift */,
+				OBJ_29 /* URL+ExtendedAttributes.swift */,
+				OBJ_30 /* XMLItem.swift */,
 			);
-			name = "Cryptor 0.8.9";
-			path = ".build/checkouts/BlueCryptor.git-2709167748876642405/Sources";
+			name = SwiftPatterns;
+			path = ".build/checkouts/SwiftPatterns.git-8153222432062766290/Sources/SwiftPatterns";
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_48 /* Products */ = {
+		OBJ_32 /* SwiftAWSSignatureV4 1.0.0 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_33 /* SwiftAWSSignatureV4 */,
+				OBJ_38 /* Package.swift */,
+			);
+			name = "SwiftAWSSignatureV4 1.0.0";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_33 /* SwiftAWSSignatureV4 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_34 /* AWSAccount.swift */,
+				OBJ_35 /* Chunking.swift */,
+				OBJ_36 /* String+Extensions.swift */,
+				OBJ_37 /* URLRequest+AWSAccountSigning.swift */,
+			);
+			name = SwiftAWSSignatureV4;
+			path = ".build/checkouts/SwiftAWSSignatureV4.git-5312922551482390733/Sources/SwiftAWSSignatureV4";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_39 /* Cryptor 0.8.18 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_40 /* Cryptor */,
+				OBJ_51 /* Package.swift */,
+			);
+			name = "Cryptor 0.8.18";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_40 /* Cryptor */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_41 /* Crypto.swift */,
+				OBJ_42 /* Cryptor.swift */,
+				OBJ_43 /* Digest.swift */,
+				OBJ_44 /* HMAC.swift */,
+				OBJ_45 /* KeyDerivation.swift */,
+				OBJ_46 /* Random.swift */,
+				OBJ_47 /* Status.swift */,
+				OBJ_48 /* StreamCryptor.swift */,
+				OBJ_49 /* Updatable.swift */,
+				OBJ_50 /* Utilities.swift */,
+			);
+			name = Cryptor;
+			path = ".build/checkouts/BlueCryptor.git-6214515965821713075/Sources/Cryptor";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_5 /*  */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_6 /* Package.swift */,
+				OBJ_7 /* Sources */,
+				OBJ_13 /* Tests */,
+				OBJ_16 /* DerivedData */,
+				OBJ_17 /* Dependencies */,
+				OBJ_52 /* Products */,
+			);
+			name = "";
+			sourceTree = "<group>";
+		};
+		OBJ_52 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				"SwiftAWSS3::SwiftAWSS3Tests::Product" /* SwiftAWSS3Tests.xctest */,
@@ -324,27 +359,24 @@
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		OBJ_5 /*  */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_6 /* Package.swift */,
-				OBJ_7 /* Sources */,
-				OBJ_12 /* Tests */,
-				OBJ_15 /* Dependencies */,
-				OBJ_48 /* Products */,
-			);
-			name = "";
-			sourceTree = "<group>";
-		};
 		OBJ_7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_8 /* AWSBucket.swift */,
-				OBJ_9 /* ListBucketResult.swift */,
-				OBJ_10 /* S3PutComponents.swift */,
-				OBJ_11 /* ServerSideEncryption.swift */,
+				OBJ_8 /* SwiftAWSS3 */,
 			);
-			path = Sources;
+			name = Sources;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_8 /* SwiftAWSS3 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_9 /* AWSBucket.swift */,
+				OBJ_10 /* ListBucketResult.swift */,
+				OBJ_11 /* S3PutComponents.swift */,
+				OBJ_12 /* ServerSideEncryption.swift */,
+			);
+			name = SwiftAWSS3;
+			path = Sources/SwiftAWSS3;
 			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
@@ -352,10 +384,10 @@
 /* Begin PBXNativeTarget section */
 		"Cryptor::Cryptor" /* Cryptor */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_140 /* Build configuration list for PBXNativeTarget "Cryptor" */;
+			buildConfigurationList = OBJ_143 /* Build configuration list for PBXNativeTarget "Cryptor" */;
 			buildPhases = (
-				OBJ_143 /* Sources */,
-				OBJ_154 /* Frameworks */,
+				OBJ_146 /* Sources */,
+				OBJ_157 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -368,9 +400,9 @@
 		};
 		"Cryptor::SwiftPMPackageDescription" /* CryptorPackageDescription */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_73 /* Build configuration list for PBXNativeTarget "CryptorPackageDescription" */;
+			buildConfigurationList = OBJ_77 /* Build configuration list for PBXNativeTarget "CryptorPackageDescription" */;
 			buildPhases = (
-				OBJ_76 /* Sources */,
+				OBJ_80 /* Sources */,
 			);
 			buildRules = (
 			);
@@ -382,17 +414,17 @@
 		};
 		"SwiftAWSS3::SwiftAWSS3" /* SwiftAWSS3 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_97 /* Build configuration list for PBXNativeTarget "SwiftAWSS3" */;
+			buildConfigurationList = OBJ_101 /* Build configuration list for PBXNativeTarget "SwiftAWSS3" */;
 			buildPhases = (
-				OBJ_100 /* Sources */,
-				OBJ_105 /* Frameworks */,
+				OBJ_104 /* Sources */,
+				OBJ_109 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_109 /* PBXTargetDependency */,
-				OBJ_110 /* PBXTargetDependency */,
-				OBJ_111 /* PBXTargetDependency */,
+				OBJ_113 /* PBXTargetDependency */,
+				OBJ_114 /* PBXTargetDependency */,
+				OBJ_115 /* PBXTargetDependency */,
 			);
 			name = SwiftAWSS3;
 			productName = SwiftAWSS3;
@@ -401,18 +433,18 @@
 		};
 		"SwiftAWSS3::SwiftAWSS3Tests" /* SwiftAWSS3Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_79 /* Build configuration list for PBXNativeTarget "SwiftAWSS3Tests" */;
+			buildConfigurationList = OBJ_83 /* Build configuration list for PBXNativeTarget "SwiftAWSS3Tests" */;
 			buildPhases = (
-				OBJ_82 /* Sources */,
-				OBJ_84 /* Frameworks */,
+				OBJ_86 /* Sources */,
+				OBJ_88 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_89 /* PBXTargetDependency */,
-				OBJ_91 /* PBXTargetDependency */,
 				OBJ_93 /* PBXTargetDependency */,
 				OBJ_95 /* PBXTargetDependency */,
+				OBJ_97 /* PBXTargetDependency */,
+				OBJ_99 /* PBXTargetDependency */,
 			);
 			name = SwiftAWSS3Tests;
 			productName = SwiftAWSS3Tests;
@@ -421,9 +453,9 @@
 		};
 		"SwiftAWSS3::SwiftPMPackageDescription" /* SwiftAWSS3PackageDescription */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_55 /* Build configuration list for PBXNativeTarget "SwiftAWSS3PackageDescription" */;
+			buildConfigurationList = OBJ_59 /* Build configuration list for PBXNativeTarget "SwiftAWSS3PackageDescription" */;
 			buildPhases = (
-				OBJ_58 /* Sources */,
+				OBJ_62 /* Sources */,
 			);
 			buildRules = (
 			);
@@ -435,15 +467,15 @@
 		};
 		"SwiftAWSSignatureV4::SwiftAWSSignatureV4" /* SwiftAWSSignatureV4 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_129 /* Build configuration list for PBXNativeTarget "SwiftAWSSignatureV4" */;
+			buildConfigurationList = OBJ_132 /* Build configuration list for PBXNativeTarget "SwiftAWSSignatureV4" */;
 			buildPhases = (
-				OBJ_132 /* Sources */,
-				OBJ_137 /* Frameworks */,
+				OBJ_135 /* Sources */,
+				OBJ_140 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_139 /* PBXTargetDependency */,
+				OBJ_142 /* PBXTargetDependency */,
 			);
 			name = SwiftAWSSignatureV4;
 			productName = SwiftAWSSignatureV4;
@@ -452,9 +484,9 @@
 		};
 		"SwiftAWSSignatureV4::SwiftPMPackageDescription" /* SwiftAWSSignatureV4PackageDescription */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_67 /* Build configuration list for PBXNativeTarget "SwiftAWSSignatureV4PackageDescription" */;
+			buildConfigurationList = OBJ_71 /* Build configuration list for PBXNativeTarget "SwiftAWSSignatureV4PackageDescription" */;
 			buildPhases = (
-				OBJ_70 /* Sources */,
+				OBJ_74 /* Sources */,
 			);
 			buildRules = (
 			);
@@ -466,9 +498,9 @@
 		};
 		"SwiftPatterns::SwiftPMPackageDescription" /* SwiftPatternsPackageDescription */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_61 /* Build configuration list for PBXNativeTarget "SwiftPatternsPackageDescription" */;
+			buildConfigurationList = OBJ_65 /* Build configuration list for PBXNativeTarget "SwiftPatternsPackageDescription" */;
 			buildPhases = (
-				OBJ_64 /* Sources */,
+				OBJ_68 /* Sources */,
 			);
 			buildRules = (
 			);
@@ -480,10 +512,10 @@
 		};
 		"SwiftPatterns::SwiftPatterns" /* SwiftPatterns */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_112 /* Build configuration list for PBXNativeTarget "SwiftPatterns" */;
+			buildConfigurationList = OBJ_116 /* Build configuration list for PBXNativeTarget "SwiftPatterns" */;
 			buildPhases = (
-				OBJ_115 /* Sources */,
-				OBJ_128 /* Frameworks */,
+				OBJ_119 /* Sources */,
+				OBJ_131 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -510,7 +542,7 @@
 				en,
 			);
 			mainGroup = OBJ_5 /*  */;
-			productRefGroup = OBJ_48 /* Products */;
+			productRefGroup = OBJ_52 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -530,156 +562,205 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		OBJ_100 /* Sources */ = {
+		OBJ_104 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_101 /* AWSBucket.swift in Sources */,
-				OBJ_102 /* ListBucketResult.swift in Sources */,
-				OBJ_103 /* S3PutComponents.swift in Sources */,
-				OBJ_104 /* ServerSideEncryption.swift in Sources */,
+				OBJ_105 /* AWSBucket.swift in Sources */,
+				OBJ_106 /* ListBucketResult.swift in Sources */,
+				OBJ_107 /* S3PutComponents.swift in Sources */,
+				OBJ_108 /* ServerSideEncryption.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_115 /* Sources */ = {
+		OBJ_119 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_116 /* Alert.swift in Sources */,
-				OBJ_117 /* ChangeSet.swift in Sources */,
-				OBJ_118 /* DataExtraction.swift in Sources */,
-				OBJ_119 /* DirectoryMonitor.swift in Sources */,
-				OBJ_120 /* LogSearch.swift in Sources */,
-				OBJ_121 /* Math.swift in Sources */,
-				OBJ_122 /* MediatedAccess.swift in Sources */,
-				OBJ_123 /* NonNilArrayFilter.swift in Sources */,
-				OBJ_124 /* QueuedVar.swift in Sources */,
-				OBJ_125 /* SerializedResourceWrapping.swift in Sources */,
-				OBJ_126 /* URL+ExtendedAttributes.swift in Sources */,
-				OBJ_127 /* XMLElement.swift in Sources */,
+				OBJ_120 /* Alert.swift in Sources */,
+				OBJ_121 /* ChangeSet.swift in Sources */,
+				OBJ_122 /* DataExtraction.swift in Sources */,
+				OBJ_123 /* DirectoryMonitor.swift in Sources */,
+				OBJ_124 /* LogSearch.swift in Sources */,
+				OBJ_125 /* Math.swift in Sources */,
+				OBJ_126 /* MediatedAccess.swift in Sources */,
+				OBJ_127 /* QueuedVar.swift in Sources */,
+				OBJ_128 /* SerializedResourceWrapping.swift in Sources */,
+				OBJ_129 /* URL+ExtendedAttributes.swift in Sources */,
+				OBJ_130 /* XMLItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_132 /* Sources */ = {
+		OBJ_135 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_133 /* AWSAccount.swift in Sources */,
-				OBJ_134 /* Chunking.swift in Sources */,
-				OBJ_135 /* String+Extensions.swift in Sources */,
-				OBJ_136 /* URLRequest+AWSAccountSigning.swift in Sources */,
+				OBJ_136 /* AWSAccount.swift in Sources */,
+				OBJ_137 /* Chunking.swift in Sources */,
+				OBJ_138 /* String+Extensions.swift in Sources */,
+				OBJ_139 /* URLRequest+AWSAccountSigning.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_143 /* Sources */ = {
+		OBJ_146 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_144 /* Crypto.swift in Sources */,
-				OBJ_145 /* Cryptor.swift in Sources */,
-				OBJ_146 /* Digest.swift in Sources */,
-				OBJ_147 /* HMAC.swift in Sources */,
-				OBJ_148 /* KeyDerivation.swift in Sources */,
-				OBJ_149 /* Random.swift in Sources */,
-				OBJ_150 /* Status.swift in Sources */,
-				OBJ_151 /* StreamCryptor.swift in Sources */,
-				OBJ_152 /* Updatable.swift in Sources */,
-				OBJ_153 /* Utilities.swift in Sources */,
+				OBJ_147 /* Crypto.swift in Sources */,
+				OBJ_148 /* Cryptor.swift in Sources */,
+				OBJ_149 /* Digest.swift in Sources */,
+				OBJ_150 /* HMAC.swift in Sources */,
+				OBJ_151 /* KeyDerivation.swift in Sources */,
+				OBJ_152 /* Random.swift in Sources */,
+				OBJ_153 /* Status.swift in Sources */,
+				OBJ_154 /* StreamCryptor.swift in Sources */,
+				OBJ_155 /* Updatable.swift in Sources */,
+				OBJ_156 /* Utilities.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_58 /* Sources */ = {
+		OBJ_62 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_59 /* Package.swift in Sources */,
+				OBJ_63 /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_64 /* Sources */ = {
+		OBJ_68 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_65 /* Package.swift in Sources */,
+				OBJ_69 /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_70 /* Sources */ = {
+		OBJ_74 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_71 /* Package.swift in Sources */,
+				OBJ_75 /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_76 /* Sources */ = {
+		OBJ_80 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_77 /* Package.swift in Sources */,
+				OBJ_81 /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_82 /* Sources */ = {
+		OBJ_86 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_83 /* GETTests.swift in Sources */,
+				OBJ_87 /* GETTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		OBJ_109 /* PBXTargetDependency */ = {
+		OBJ_113 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "SwiftPatterns::SwiftPatterns" /* SwiftPatterns */;
-			targetProxy = B5E27D0E1F9C5F2000B17A55 /* PBXContainerItemProxy */;
+			targetProxy = B54CCDC120337AF200A53599 /* PBXContainerItemProxy */;
 		};
-		OBJ_110 /* PBXTargetDependency */ = {
+		OBJ_114 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "SwiftAWSSignatureV4::SwiftAWSSignatureV4" /* SwiftAWSSignatureV4 */;
-			targetProxy = B5E27D0F1F9C5F2000B17A55 /* PBXContainerItemProxy */;
+			targetProxy = B54CCDC220337AF200A53599 /* PBXContainerItemProxy */;
 		};
-		OBJ_111 /* PBXTargetDependency */ = {
+		OBJ_115 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Cryptor::Cryptor" /* Cryptor */;
-			targetProxy = B5E27D101F9C5F2000B17A55 /* PBXContainerItemProxy */;
+			targetProxy = B54CCDC320337AF200A53599 /* PBXContainerItemProxy */;
 		};
-		OBJ_139 /* PBXTargetDependency */ = {
+		OBJ_142 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Cryptor::Cryptor" /* Cryptor */;
-			targetProxy = B5E27D0D1F9C5F2000B17A55 /* PBXContainerItemProxy */;
+			targetProxy = B54CCDC020337AF200A53599 /* PBXContainerItemProxy */;
 		};
-		OBJ_159 /* PBXTargetDependency */ = {
+		OBJ_162 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "SwiftAWSS3::SwiftAWSS3Tests" /* SwiftAWSS3Tests */;
-			targetProxy = B5E27D151F9C5F2100B17A55 /* PBXContainerItemProxy */;
-		};
-		OBJ_89 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "SwiftAWSS3::SwiftAWSS3" /* SwiftAWSS3 */;
-			targetProxy = B5E27D111F9C5F2000B17A55 /* PBXContainerItemProxy */;
-		};
-		OBJ_91 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "SwiftPatterns::SwiftPatterns" /* SwiftPatterns */;
-			targetProxy = B5E27D121F9C5F2000B17A55 /* PBXContainerItemProxy */;
+			targetProxy = B54CCDC820337AF300A53599 /* PBXContainerItemProxy */;
 		};
 		OBJ_93 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = "SwiftAWSSignatureV4::SwiftAWSSignatureV4" /* SwiftAWSSignatureV4 */;
-			targetProxy = B5E27D131F9C5F2000B17A55 /* PBXContainerItemProxy */;
+			target = "SwiftAWSS3::SwiftAWSS3" /* SwiftAWSS3 */;
+			targetProxy = B54CCDC420337AF200A53599 /* PBXContainerItemProxy */;
 		};
 		OBJ_95 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
+			target = "SwiftPatterns::SwiftPatterns" /* SwiftPatterns */;
+			targetProxy = B54CCDC520337AF200A53599 /* PBXContainerItemProxy */;
+		};
+		OBJ_97 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "SwiftAWSSignatureV4::SwiftAWSSignatureV4" /* SwiftAWSSignatureV4 */;
+			targetProxy = B54CCDC620337AF200A53599 /* PBXContainerItemProxy */;
+		};
+		OBJ_99 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
 			target = "Cryptor::Cryptor" /* Cryptor */;
-			targetProxy = B5E27D141F9C5F2000B17A55 /* PBXContainerItemProxy */;
+			targetProxy = B54CCDC720337AF200A53599 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		OBJ_113 /* Debug */ = {
+		OBJ_102 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/CommonCrypto.git-1219305460334093717",
+				);
+				INFOPLIST_FILE = SwiftAWSS3.xcodeproj/SwiftAWSS3_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = SwiftAWSS3;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = SwiftAWSS3;
+			};
+			name = Debug;
+		};
+		OBJ_103 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/CommonCrypto.git-1219305460334093717",
+				);
+				INFOPLIST_FILE = SwiftAWSS3.xcodeproj/SwiftAWSS3_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = SwiftAWSS3;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGET_NAME = SwiftAWSS3;
+			};
+			name = Release;
+		};
+		OBJ_117 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -696,12 +777,12 @@
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGET_NAME = SwiftPatterns;
 			};
 			name = Debug;
 		};
-		OBJ_114 /* Release */ = {
+		OBJ_118 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -718,12 +799,12 @@
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGET_NAME = SwiftPatterns;
 			};
 			name = Release;
 		};
-		OBJ_130 /* Debug */ = {
+		OBJ_133 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -743,12 +824,12 @@
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGET_NAME = SwiftAWSSignatureV4;
 			};
 			name = Debug;
 		};
-		OBJ_131 /* Release */ = {
+		OBJ_134 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -768,12 +849,12 @@
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGET_NAME = SwiftAWSSignatureV4;
 			};
 			name = Release;
 		};
-		OBJ_141 /* Debug */ = {
+		OBJ_144 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -793,12 +874,12 @@
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGET_NAME = Cryptor;
 			};
 			name = Debug;
 		};
-		OBJ_142 /* Release */ = {
+		OBJ_145 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -818,30 +899,30 @@
 				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGET_NAME = Cryptor;
 			};
 			name = Release;
 		};
-		OBJ_157 /* Debug */ = {
+		OBJ_160 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 			};
 			name = Debug;
 		};
-		OBJ_158 /* Release */ = {
+		OBJ_161 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 			};
 			name = Release;
 		};
-		OBJ_162 /* Debug */ = {
+		OBJ_165 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 			};
 			name = Debug;
 		};
-		OBJ_163 /* Release */ = {
+		OBJ_166 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 			};
@@ -889,79 +970,79 @@
 			};
 			name = Release;
 		};
-		OBJ_56 /* Debug */ = {
+		OBJ_60 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 3 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
-				SWIFT_VERSION = 3.0;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
-		OBJ_57 /* Release */ = {
+		OBJ_61 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 3 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
-				SWIFT_VERSION = 3.0;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
-		OBJ_62 /* Debug */ = {
+		OBJ_66 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 3 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
-				SWIFT_VERSION = 3.0;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
-		OBJ_63 /* Release */ = {
+		OBJ_67 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 3 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
-				SWIFT_VERSION = 3.0;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
-		OBJ_68 /* Debug */ = {
+		OBJ_72 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 3 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
-				SWIFT_VERSION = 3.0;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
-		OBJ_69 /* Release */ = {
+		OBJ_73 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 3 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
-				SWIFT_VERSION = 3.0;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
-		OBJ_74 /* Debug */ = {
+		OBJ_78 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 3 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
-				SWIFT_VERSION = 3.0;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
-		OBJ_75 /* Release */ = {
+		OBJ_79 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 3 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/3 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
-				SWIFT_VERSION = 3.0;
+				OTHER_SWIFT_FLAGS = "-swift-version 4 -I /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/pm/4 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
-		OBJ_80 /* Debug */ = {
+		OBJ_84 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
@@ -977,12 +1058,12 @@
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGET_NAME = SwiftAWSS3Tests;
 			};
 			name = Debug;
 		};
-		OBJ_81 /* Release */ = {
+		OBJ_85 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
@@ -998,105 +1079,64 @@
 				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGET_NAME = SwiftAWSS3Tests;
-			};
-			name = Release;
-		};
-		OBJ_98 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/.build/checkouts/CommonCrypto.git-1219305460334093717",
-				);
-				INFOPLIST_FILE = SwiftAWSS3.xcodeproj/SwiftAWSS3_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = SwiftAWSS3;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGET_NAME = SwiftAWSS3;
-			};
-			name = Debug;
-		};
-		OBJ_99 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/.build/checkouts/CommonCrypto.git-1219305460334093717",
-				);
-				INFOPLIST_FILE = SwiftAWSS3.xcodeproj/SwiftAWSS3_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = SwiftAWSS3;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGET_NAME = SwiftAWSS3;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		OBJ_112 /* Build configuration list for PBXNativeTarget "SwiftPatterns" */ = {
+		OBJ_101 /* Build configuration list for PBXNativeTarget "SwiftAWSS3" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_113 /* Debug */,
-				OBJ_114 /* Release */,
+				OBJ_102 /* Debug */,
+				OBJ_103 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_129 /* Build configuration list for PBXNativeTarget "SwiftAWSSignatureV4" */ = {
+		OBJ_116 /* Build configuration list for PBXNativeTarget "SwiftPatterns" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_130 /* Debug */,
-				OBJ_131 /* Release */,
+				OBJ_117 /* Debug */,
+				OBJ_118 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_140 /* Build configuration list for PBXNativeTarget "Cryptor" */ = {
+		OBJ_132 /* Build configuration list for PBXNativeTarget "SwiftAWSSignatureV4" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_141 /* Debug */,
-				OBJ_142 /* Release */,
+				OBJ_133 /* Debug */,
+				OBJ_134 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_156 /* Build configuration list for PBXAggregateTarget "SwiftAWSS3PackageTests" */ = {
+		OBJ_143 /* Build configuration list for PBXNativeTarget "Cryptor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_157 /* Debug */,
-				OBJ_158 /* Release */,
+				OBJ_144 /* Debug */,
+				OBJ_145 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_161 /* Build configuration list for PBXAggregateTarget "CommonCrypto" */ = {
+		OBJ_159 /* Build configuration list for PBXAggregateTarget "SwiftAWSS3PackageTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_162 /* Debug */,
-				OBJ_163 /* Release */,
+				OBJ_160 /* Debug */,
+				OBJ_161 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_164 /* Build configuration list for PBXAggregateTarget "CommonCrypto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_165 /* Debug */,
+				OBJ_166 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
@@ -1110,56 +1150,47 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_55 /* Build configuration list for PBXNativeTarget "SwiftAWSS3PackageDescription" */ = {
+		OBJ_59 /* Build configuration list for PBXNativeTarget "SwiftAWSS3PackageDescription" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_56 /* Debug */,
-				OBJ_57 /* Release */,
+				OBJ_60 /* Debug */,
+				OBJ_61 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_61 /* Build configuration list for PBXNativeTarget "SwiftPatternsPackageDescription" */ = {
+		OBJ_65 /* Build configuration list for PBXNativeTarget "SwiftPatternsPackageDescription" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_62 /* Debug */,
-				OBJ_63 /* Release */,
+				OBJ_66 /* Debug */,
+				OBJ_67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_67 /* Build configuration list for PBXNativeTarget "SwiftAWSSignatureV4PackageDescription" */ = {
+		OBJ_71 /* Build configuration list for PBXNativeTarget "SwiftAWSSignatureV4PackageDescription" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_68 /* Debug */,
-				OBJ_69 /* Release */,
+				OBJ_72 /* Debug */,
+				OBJ_73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_73 /* Build configuration list for PBXNativeTarget "CryptorPackageDescription" */ = {
+		OBJ_77 /* Build configuration list for PBXNativeTarget "CryptorPackageDescription" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_74 /* Debug */,
-				OBJ_75 /* Release */,
+				OBJ_78 /* Debug */,
+				OBJ_79 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		OBJ_79 /* Build configuration list for PBXNativeTarget "SwiftAWSS3Tests" */ = {
+		OBJ_83 /* Build configuration list for PBXNativeTarget "SwiftAWSS3Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_80 /* Debug */,
-				OBJ_81 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		OBJ_97 /* Build configuration list for PBXNativeTarget "SwiftAWSS3" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_98 /* Debug */,
-				OBJ_99 /* Release */,
+				OBJ_84 /* Debug */,
+				OBJ_85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;

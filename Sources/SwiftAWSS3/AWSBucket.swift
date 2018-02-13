@@ -12,16 +12,30 @@ public struct AWSBucket {
 	public static let ibmPublicServer:String = "objectstorage.softlayer.net"
 	public static let ibmPrivateServer:String = "objectstorage.service.networklayer.com"
 	
+	public var placeBucketInDomain:Bool = true
+	
 	public init(name:String, region:String, server:String = AWSBucket.amazonServer) {
 		bucket = name
 		self.region = region
 		self.server = server
+		if name.contains(".") {
+			placeBucketInDomain = false
+		}
+	}
+	
+	public func urlTo(_ object:String)->URL? {
+		if placeBucketInDomain {
+			guard let encodedName:String = object.aws_uriEncoded(encodeSlash: false) else { return nil }
+			return URL(string:"https://\(bucket).\(server)\(encodedName)")
+		} else {
+			guard let encodedName:String = ("/" + bucket + object).aws_uriEncoded(encodeSlash: false) else { return nil }
+			return URL(string:"https://\(server)\(encodedName)")
+		}
 	}
 	
 	///include the leading "/" in the object name
 	public func requestToGETObjectNamed(_ object:String, etag:String? = nil)->URLRequest? {
-		guard let encodedName:String = object.aws_uriEncoded(encodeSlash: false)
-			,let url = URL(string:"https://\(bucket).\(server)\(encodedName)") else {
+		guard let url = urlTo(object) else {
 		//,let url = URL(string:"https://\(server)/\(bucket)\(encodedName)") else {
 			//guard let url = URL(string:"https://examplebucket.s3.amazonaws.com/photos/photo1.jpg") else {
 			return nil
@@ -36,8 +50,7 @@ public struct AWSBucket {
 	
 	
 	public func requestToDELETEObjectNamed(_ object:String)->URLRequest? {
-		guard let encodedName:String = object.aws_uriEncoded(encodeSlash: false)
-			,let url = URL(string:"https://\(bucket).\(server)\(encodedName)") else {
+		guard let url = urlTo(object) else {
 			//guard let url = URL(string:"https://examplebucket.s3.amazonaws.com/photos/photo1.jpg") else {
 			return nil
 		}
@@ -49,7 +62,8 @@ public struct AWSBucket {
 	
 	public func requestToListObjects(prefix:String? = nil, marker:String? = nil)->URLRequest? {
 		// http://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketGET.html
-		guard var components:URLComponents = URLComponents(string: "https://\(bucket).\(server)/") else {
+		guard let startingUrl:URL = urlTo("/")
+			,var components:URLComponents = URLComponents(url: startingUrl, resolvingAgainstBaseURL: false) else {
 			return nil
 		}
 		components.queryItems = []
