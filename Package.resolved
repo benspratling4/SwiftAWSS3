@@ -1,0 +1,34 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Cryptor",
+        "repositoryURL": "https://github.com/IBM-Swift/BlueCryptor.git",
+        "state": {
+          "branch": null,
+          "revision": "12d2bf3ec7207ec3cd004b9582f69ef5fae1da3b",
+          "version": "1.0.32"
+        }
+      },
+      {
+        "package": "SwiftAWSSignatureV4",
+        "repositoryURL": "https://github.com/benspratling4/SwiftAWSSignatureV4.git",
+        "state": {
+          "branch": null,
+          "revision": "fb039c4ae7002aa2e8296f12d3ced2d23d70ac27",
+          "version": "2.0.0"
+        }
+      },
+      {
+        "package": "SwiftPatterns",
+        "repositoryURL": "https://github.com/benspratling4/SwiftPatterns.git",
+        "state": {
+          "branch": null,
+          "revision": "8cb7b250000800fb1ab81c97bae2d689d53a3814",
+          "version": "3.0.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

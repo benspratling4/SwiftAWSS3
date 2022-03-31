@@ -12,7 +12,7 @@ import SwiftPatterns
 extension SwiftPatterns.XMLItem {
 	
 	var childString:String? {
-		let stringChildren:[String] = children.flatMap { return $0 as? String }
+		let stringChildren:[String] = children.compactMap { return $0 as? String }
 		if stringChildren.count == 0 {
 			return nil
 		}
@@ -51,7 +51,7 @@ public struct ListBucketResult {
 		self.prefix = node.child(named: "Prefix")?.childString
 		self.marker = node.child(named: "Marker")?.childString
 		let (contentsNodes, _) = node.children(named: "Contents")
-		self.contents = contentsNodes.flatMap({return Content(xml: $0)})
+		self.contents = contentsNodes.compactMap({return Content(xml: $0)})
 	}
 	
 	public struct Content {

@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import SwiftAWSSignatureV4
 
 ///used to build a PUT request with options
 public struct S3PutComponents {
@@ -65,4 +64,3 @@ public struct S3PutComponents {
 	}
 	
 }
-

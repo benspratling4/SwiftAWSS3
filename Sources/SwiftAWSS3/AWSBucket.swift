@@ -1,5 +1,5 @@
 import Foundation
-
+import SwiftAWSSignatureV4
 
 public struct AWSBucket {
 	public let region:String
