@@ -56,6 +56,7 @@ public struct AWSBucket {
 		}
 		var request = URLRequest(url: url)
 		request.httpMethod = "DELETE"
+		request.httpBody = Data()
 		return request
 	}
 	

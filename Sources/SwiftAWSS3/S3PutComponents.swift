@@ -43,8 +43,9 @@ public struct S3PutComponents {
 		}
 		var request:URLRequest = URLRequest(url: url, cachePolicy:.reloadIgnoringLocalAndRemoteCacheData)
 		request.httpMethod = "PUT"
-		let acl:String = self.acl ?? "bucket-owner-full-control"
-		request.addValue(acl, forHTTPHeaderField: "x-amz-acl")
+		if let acl:String = self.acl {
+			request.addValue(acl, forHTTPHeaderField: "x-amz-acl")
+		}
 		request.addValue("\(data.count)", forHTTPHeaderField: "Content-Length")
 		if let mime = mimeType {
 			request.addValue(mime, forHTTPHeaderField: "Content-Type")
