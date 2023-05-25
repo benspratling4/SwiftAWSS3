@@ -25,10 +25,10 @@ public struct AWSBucket {
 	
 	public func urlTo(_ object:String)->URL? {
 		if placeBucketInDomain {
-			guard let encodedName:String = object.aws_uriEncoded(encodeSlash: false) else { return nil }
+			let encodedName:String = object.aws_uriEncoded(encodeSlash: false)
 			return URL(string:"https://\(bucket).\(server)\(encodedName)")
 		} else {
-			guard let encodedName:String = ("/" + bucket + object).aws_uriEncoded(encodeSlash: false) else { return nil }
+			let encodedName:String = ("/" + bucket + object).aws_uriEncoded(encodeSlash: false)
 			return URL(string:"https://\(server)\(encodedName)")
 		}
 	}

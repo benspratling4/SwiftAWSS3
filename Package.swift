@@ -1,9 +1,12 @@
-// swift-tools-version:5.0
+// swift-tools-version:5.6
 import PackageDescription
 let package = Package(
 	name: "SwiftAWSS3"
 	,platforms: [
-        .macOS(.v10_11)
+		.macOS(.v10_15),
+		.iOS(.v13),
+		.watchOS(.v6),
+		.tvOS(.v13),
 	]
 	,products: [
 		.library(
@@ -11,8 +14,8 @@ let package = Package(
 			targets: ["SwiftAWSS3"]),
 		]
 	,dependencies:[
-		.package(url:"https://github.com/benspratling4/SwiftAWSSignatureV4.git", from:"2.0.0")
-		,.package(url:"https://github.com/benspratling4/SwiftPatterns.git", from:"3.0.0")
+		.package(url:"https://github.com/benspratling4/SwiftAWSSignatureV4.git", from:"3.0.1")
+		,.package(url:"https://github.com/benspratling4/SwiftPatterns.git", from:"4.3.0")
 	]
 	,targets:[
 		.target(
